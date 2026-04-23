@@ -1,21 +1,21 @@
-/* ===== RESET & BASE ===== */
+﻿/* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --dark:       #1F2A1F;
-  --primary:    #2E6F2E;
-  --teal:       #A8D5A2;
+  --dark:       #003840;
+  --primary:    #00555C;
+  --teal:       #7DD4C9;
   --white:      #FFFFFF;
-  --gray-bg:    #F2F6F3;
-  --grad-start: #3FA34D;
-  --grad-end:   #2E6F2E;
-  --gradient:   linear-gradient(to right, #3FA34D, #2E6F2E);
+  --gray-bg:    #EEF5F5;
+  --grad-start: #00A98A;
+  --grad-end:   #00555C;
+  --gradient:   linear-gradient(to right, #00A98A, #00555C);
 }
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
 html {
-  scrollbar-color: #3FA34D rgba(46, 111, 46, 0.12);
+  scrollbar-color: #00A98A rgba(0, 85, 92, 0.12);
   scrollbar-width: thin;
 }
 
@@ -31,17 +31,17 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(46, 111, 46, 0.08);
+  background: rgba(0, 85, 92, 0.08);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #A8D5A2 0%, #3FA34D 100%);
+  background: linear-gradient(180deg, #7DD4C9 0%, #00A98A 100%);
   border-radius: 999px;
   border: 2px solid rgba(255, 255, 255, 0.75);
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #7DC47D 0%, #4DB84D 100%);
+  background: linear-gradient(180deg, #5EC5B5 0%, #009B8C 100%);
 }
 
 /* ===== SCROLL REVEAL ===== */
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb:hover {
 .btn-cta {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, #3FA34D, #306D1D, #2E6F2E, #306D1D, #3FA34D);
+  background: linear-gradient(135deg, #00A98A, #006670, #00555C, #006670, #00A98A);
   background-size: 400% 400%;
   animation: cta-gradient 10s linear infinite;
   overflow: hidden;
@@ -324,7 +324,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 248px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #3FA34D 0%, #2E6F2E 100%);
+  background: linear-gradient(to right, #00A98A 0%, #00555C 100%);
   overflow: hidden;
 }
 
@@ -476,7 +476,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--white);
   border-radius: 20px;
   padding: 36px;
-  box-shadow: 0 8px 32px 0 rgba(29, 80, 29, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 60, 68, 0.18);
   border: 2px solid transparent;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   display: flex;
@@ -485,7 +485,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .card:hover {
-  border-color: #C5E2C5;
+  border-color: #B0DDD8;
   box-shadow: none;
   transform: translateY(-4px);
 }
@@ -547,7 +547,7 @@ body::-webkit-scrollbar-thumb:hover {
 .problems-block {
   position: relative;
   height: 195px;
-  background: linear-gradient(to right, #3FA34D 0%, #2E6F2E 100%);
+  background: linear-gradient(to right, #00A98A 0%, #00555C 100%);
   overflow: visible;
   clip-path: inset(-400px 0 0 0); /* permite sangrar acima, clipa abaixo */
   z-index: 2;
@@ -591,7 +591,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
   height: 240px;
   width: auto;
-  filter: drop-shadow(0 0 30px rgba(63, 163, 77, 0.2));
+  filter: drop-shadow(0 0 30px rgba(0, 169, 138, 0.2));
 }
 
 /* Headline */
@@ -761,9 +761,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ===== WHATSAPP FLUTUANTE ===== */
 @keyframes wpp-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(63, 163, 77, 0.55), 0 0 0 0 rgba(63, 163, 77, 0.3); }
-  50%  { box-shadow: 0 0 0 14px rgba(63, 163, 77, 0.12), 0 0 0 28px rgba(63, 163, 77, 0.04); }
-  100% { box-shadow: 0 0 0 0 rgba(63, 163, 77, 0), 0 0 0 0 rgba(63, 163, 77, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(0, 169, 138, 0.55), 0 0 0 0 rgba(0, 169, 138, 0.3); }
+  50%  { box-shadow: 0 0 0 14px rgba(0, 169, 138, 0.12), 0 0 0 28px rgba(0, 169, 138, 0.04); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 169, 138, 0), 0 0 0 0 rgba(0, 169, 138, 0); }
 }
 
 .whatsapp-float {
@@ -772,7 +772,7 @@ body::-webkit-scrollbar-thumb:hover {
   right: 30px;
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, #3FA34D, #2E6F2E);
+  background: linear-gradient(135deg, #00A98A, #00555C);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -786,7 +786,7 @@ body::-webkit-scrollbar-thumb:hover {
 .whatsapp-float:hover {
   transform: scale(1.05);
   animation: none;
-  box-shadow: 0 6px 28px rgba(46, 111, 46, 0.5);
+  box-shadow: 0 6px 28px rgba(0, 85, 92, 0.5);
 }
 
 .whatsapp-float:hover .wpp-badge {
@@ -810,14 +810,14 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translateY(-50%) translateX(10px) scale(0.92);
   white-space: nowrap;
   background: #ffffff;
-  color: #2E6F2E;
+  color: #00555C;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
   padding: 10px 18px;
   border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(46, 111, 46, 0.18), 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 85, 92, 0.18), 0 1px 4px rgba(0,0,0,0.08);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.22s ease, transform 0.22s ease;
@@ -839,7 +839,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== REVIEWS BLOCK ===== */
 .reviews-block {
   position: relative;
-  background: linear-gradient(135deg, #3FA34D 0%, #306D1D 40%, #2E6F2E 100%);
+  background: linear-gradient(135deg, #00A98A 0%, #006670 40%, #00555C 100%);
   min-height: 850px;
   padding: 80px 0 72px;
   display: flex;
@@ -932,7 +932,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #A8D5A2, #2E6F2E);
+  background: linear-gradient(135deg, #7DD4C9, #00555C);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1121,7 +1121,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .condition-block--gray {
-  background: #F2F6F3;
+  background: #EEF5F5;
 }
 
 .condition-media {
@@ -1176,7 +1176,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  background: linear-gradient(to right, #3FA34D, #2E6F2E);
+  background: linear-gradient(to right, #00A98A, #00555C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1245,7 +1245,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
   border-radius: 18px;
   object-fit: cover;
-  box-shadow: 0 24px 60px rgba(46, 111, 46, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 85, 92, 0.08);
 }
 
 .profile-content {
@@ -1261,7 +1261,7 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.06;
   letter-spacing: -0.03em;
   margin-bottom: 14px;
-  background: linear-gradient(90deg, #3FA34D 0%, #306D1D 48%, #2E6F2E 100%);
+  background: linear-gradient(90deg, #00A98A 0%, #006670 48%, #00555C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1272,7 +1272,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: 0.07em;
-  color: #306D1D;
+  color: #006670;
   margin-bottom: 28px;
 }
 
@@ -1287,12 +1287,12 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
-  color: #547B54;
+  color: #3D7F85;
 }
 
 .profile-body strong {
   font-weight: 700;
-  color: #2C5E2C;
+  color: #005262;
 }
 
 .profile-socials {
@@ -1306,18 +1306,18 @@ body::-webkit-scrollbar-thumb:hover {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3FA34D 0%, #2E6F2E 100%);
+  background: linear-gradient(135deg, #00A98A 0%, #00555C 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 16px 34px rgba(63, 163, 77, 0.18);
+  box-shadow: 0 16px 34px rgba(0, 169, 138, 0.18);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .profile-social-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px rgba(63, 163, 77, 0.24);
+  box-shadow: 0 20px 40px rgba(0, 169, 138, 0.24);
 }
 
 .profile-social-icon {
@@ -1421,7 +1421,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #255F25;
+  color: #005060;
   margin-bottom: 18px;
 }
 
@@ -1431,7 +1431,7 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.08;
   letter-spacing: -0.03em;
   margin-bottom: 14px;
-  background: linear-gradient(90deg, #3FA34D 0%, #306D1D 48%, #2E6F2E 100%);
+  background: linear-gradient(90deg, #00A98A 0%, #006670 48%, #00555C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1442,7 +1442,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.55;
-  color: #306D1D;
+  color: #006670;
 }
 
 .faq-list {
@@ -1455,7 +1455,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .faq-item {
   background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(63, 163, 77, 0.18);
+  border: 1px solid rgba(0, 169, 138, 0.18);
   border-radius: 14px;
   box-shadow: 0 12px 32px rgba(20, 55, 20, 0.05);
   overflow: hidden;
@@ -1463,8 +1463,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .faq-item.is-open {
-  border-color: rgba(63, 163, 77, 0.75);
-  box-shadow: 0 14px 36px rgba(63, 163, 77, 0.08);
+  border-color: rgba(0, 169, 138, 0.75);
+  box-shadow: 0 14px 36px rgba(0, 169, 138, 0.08);
 }
 
 .faq-question {
@@ -1482,11 +1482,11 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.35;
-  color: #1F5726;
+  color: #004D58;
 }
 
 .faq-icon {
-  color: #7BC47B;
+  color: #5CC4B8;
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -1518,7 +1518,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.55;
-  color: #295F29;
+  color: #005060;
 }
 
 .faq-footer {
@@ -1545,14 +1545,14 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.35;
-  color: #2B6230;
+  color: #005A64;
   max-width: 360px;
   flex: 0 1 360px;
 }
 
 .faq-cta-text strong {
   font-weight: 700;
-  color: #1F5726;
+  color: #004D58;
 }
 
 .faq-footer .btn-cta {
@@ -1676,7 +1676,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #255F25;
+  color: #005060;
   margin-bottom: 10px;
 }
 
@@ -1685,7 +1685,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -0.04em;
-  background: linear-gradient(90deg, #3FA34D 0%, #306D1D 48%, #2E6F2E 100%);
+  background: linear-gradient(90deg, #00A98A 0%, #006670 48%, #00555C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1708,8 +1708,8 @@ body::-webkit-scrollbar-thumb:hover {
   gap: 18px;
   min-height: 78px;
   text-decoration: none;
-  color: #275F27;
-  box-shadow: 0 16px 36px rgba(31, 42, 31, 0.08);
+  color: #005060;
+  box-shadow: 0 16px 36px rgba(0, 56, 64, 0.08);
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
   border: 1.5px solid transparent;
 }
@@ -1717,7 +1717,7 @@ body::-webkit-scrollbar-thumb:hover {
 .contact-card:hover {
   transform: translateY(-2px);
   box-shadow: none;
-  border-color: rgba(63, 163, 77, 0.75);
+  border-color: rgba(0, 169, 138, 0.75);
 }
 
 .contact-card-icon {
@@ -1727,7 +1727,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #A8D5A2;
+  color: #7DD4C9;
   flex-shrink: 0;
   flex: 0 0 40px;
 }
@@ -1743,7 +1743,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.45;
-  color: #285F28;
+  color: #005262;
   max-width: 420px;
 }
 
@@ -1871,7 +1871,7 @@ body::-webkit-scrollbar-thumb:hover {
 .site-footer {
   position: relative;
   min-height: 72px;
-  background: linear-gradient(135deg, #3FA34D 0%, #306D1D 42%, #2E6F2E 100%);
+  background: linear-gradient(135deg, #00A98A 0%, #006670 42%, #00555C 100%);
   overflow: hidden;
 }
 
