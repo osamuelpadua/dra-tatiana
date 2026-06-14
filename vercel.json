@@ -2,7 +2,7 @@
   "rewrites": [
     { "source": "/novo",   "destination": "/novo/index.html" },
     { "source": "/novo/",  "destination": "/novo/index.html" },
-    { "source": "/links",  "destination": "/novo/links.html" },
-    { "source": "/links/", "destination": "/novo/links.html" }
+    { "source": "/bio",  "destination": "/novo/links.html" },
+    { "source": "/bio/", "destination": "/novo/links.html" }
   ]
 }
