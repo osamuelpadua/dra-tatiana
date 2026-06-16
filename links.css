@@ -150,7 +150,7 @@
 .lk-card--primary {
   background: linear-gradient(135deg, #00A98A, #006670, #00555C, #006670, #00A98A);
   background-size: 400% 400%;
-  border-color: transparent;
+  border: none;
   box-shadow: 0 6px 28px rgba(0, 85, 92, 0.28);
   position: relative;
   overflow: hidden;
