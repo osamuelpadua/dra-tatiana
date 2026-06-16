@@ -818,17 +818,22 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
   }
 
+  /* Foto inteira no mobile — largura total, sem corte */
   .hero-right {
-    height: 460px;
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
     margin-top: 12px;
   }
 
   .doctor-img {
-    top: -40px;
+    position: static;
+    top: auto;
     bottom: auto;
-    height: 560px;
-    transform: translateX(-50%);
+    left: auto;
+    height: auto;
+    width: 100%;
+    transform: none;
+    object-fit: contain;
   }
 
   .stamp-wrapper { width: 86px; height: 86px; top: 30px; bottom: auto; right: 12px; }
