@@ -818,7 +818,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
   }
 
-  /* Ancora pelo topo — mostra cabeça + torso */
+  /* Ancora pelo fundo — mostra corpo inteiro */
   .hero-right {
     height: 420px;
     overflow: hidden;
@@ -826,8 +826,8 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .doctor-img {
-    top: 0;
-    bottom: auto;
+    top: auto;
+    bottom: 0;
     height: 480px;
     transform: translateX(-50%);
   }
