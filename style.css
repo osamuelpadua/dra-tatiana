@@ -820,7 +820,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   /* Ancora pelo topo — mostra cabeça + torso */
   .hero-right {
-    height: 320px;
+    height: 420px;
     overflow: hidden;
     margin-top: 12px;
   }
@@ -828,7 +828,7 @@ body::-webkit-scrollbar-thumb:hover {
   .doctor-img {
     top: 0;
     bottom: auto;
-    height: 380px;
+    height: 480px;
     transform: translateX(-50%);
   }
 
