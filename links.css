@@ -86,7 +86,7 @@
 }
 
 .lk-name {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   background: linear-gradient(to right, #00A98A, #00555C);
   -webkit-background-clip: text;
@@ -277,8 +277,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
   .lk-main { padding: 40px 16px 64px; }
-  .lk-logo { height: 56px; }
-  .lk-name { font-size: 16px; }
+  .lk-name { font-size: 32px; }
   .lk-card { padding: 16px 16px; gap: 14px; }
   .lk-icon { width: 44px; height: 44px; }
   .lk-card-title { font-size: 15px; }
