@@ -120,7 +120,7 @@ body::-webkit-scrollbar-thumb:hover {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('bg-hero.jpg');
+  background-image: url('bg-hero.webp');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -1528,7 +1528,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== FAQ BLOCK ===== */
 .faq-block {
   position: relative;
-  background: url("bg-faq.jpg") center/cover no-repeat;
+  background: url("bg-faq.webp") center/cover no-repeat;
   padding: 104px 0 96px;
 }
 
