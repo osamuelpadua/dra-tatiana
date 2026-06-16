@@ -86,7 +86,7 @@
 }
 
 .lk-name {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   background: linear-gradient(to right, #00A98A, #00555C);
   -webkit-background-clip: text;
@@ -100,10 +100,10 @@
   font-size: 12px;
   font-weight: 600;
   color: rgba(0, 56, 64, 0.5);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 6px;
+  margin-top: 14px;
 }
 
 .lk-tagline {
