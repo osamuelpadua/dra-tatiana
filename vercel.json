@@ -1,4 +1,5 @@
 {
+  "cleanUrls": false,
   "rewrites": [
     { "source": "/bio",  "destination": "/links.html" },
     { "source": "/bio/", "destination": "/links.html" },
