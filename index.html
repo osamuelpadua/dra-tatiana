@@ -859,15 +859,35 @@
         </div>
       </div>
 
-      <div class="contact-map-wrap">
-        <iframe
-          class="contact-map"
-          title="Mapa da clínica Dra. Tatiana Ferreira"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Avenida+Victor+Maida,+1042,+Centro,+Ibitinga+-+SP&z=17&output=embed">
-        </iframe>
+      <div class="contact-map-wrap" id="map-wrap">
+        <div class="map-facade" id="map-facade" onclick="loadMap()">
+          <div class="map-facade-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="currentColor"/><circle cx="12" cy="9" r="2.5" fill="white"/></svg>
+            Ver no mapa
+          </div>
+        </div>
       </div>
+      <script>
+        function loadMap() {
+          var wrap = document.getElementById('map-wrap');
+          var facade = document.getElementById('map-facade');
+          facade.style.display = 'none';
+          var iframe = document.createElement('iframe');
+          iframe.className = 'contact-map';
+          iframe.title = 'Mapa da clínica Dra. Tatiana Ferreira';
+          iframe.referrerPolicy = 'no-referrer-when-downgrade';
+          iframe.src = 'https://www.google.com/maps?q=Avenida+Victor+Maida,+1042,+Centro,+Ibitinga+-+SP&z=17&output=embed';
+          iframe.style.border = '0';
+          wrap.appendChild(iframe);
+        }
+        // Carrega automaticamente quando o mapa entra na viewport
+        if ('IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function(entries) {
+            if (entries[0].isIntersecting) { loadMap(); observer.disconnect(); }
+          }, { rootMargin: '200px' });
+          observer.observe(document.getElementById('map-wrap'));
+        }
+      </script>
     </div>
   </section>
   <!-- ======================== /CONTACT BLOCK ======================== -->

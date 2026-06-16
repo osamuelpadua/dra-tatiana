@@ -1927,6 +1927,30 @@ body::-webkit-scrollbar-thumb:hover {
   filter: saturate(0.88) contrast(0.94) brightness(1.02);
 }
 
+.map-facade {
+  position: absolute;
+  inset: 0;
+  background: #E2EBEC url("https://maps.googleapis.com/maps/api/staticmap?center=Avenida+Victor+Maida,1042,Ibitinga,SP&zoom=16&size=800x400&style=feature:all|saturation:-20") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.map-facade-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--teal);
+  color: white;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(0,85,92,0.3);
+}
+
 @media (min-width: 1921px) {
   .contact-panel {
     padding-left: clamp(48px, 8vw, 140px);
