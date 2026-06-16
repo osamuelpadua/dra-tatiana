@@ -90,7 +90,10 @@
 .lk-name {
   font-size: 24px;
   font-weight: 700;
-  color: #003840;
+  background: linear-gradient(to right, #00A98A, #00555C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 0.01em;
 }
 
