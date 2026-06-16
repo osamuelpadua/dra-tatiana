@@ -277,7 +277,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
   .lk-main { padding: 40px 16px 64px; }
-  .lk-name { font-size: 32px; }
+  .lk-name { font-size: 26px; }
   .lk-card { padding: 16px 16px; gap: 14px; }
   .lk-icon { width: 44px; height: 44px; }
   .lk-card-title { font-size: 15px; }
